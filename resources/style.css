@@ -1,0 +1,123 @@
+/* UNIVERSAL STYLES */
+
+html {
+  font-family: "Arial";
+  font-size: 16px;
+}
+
+.main-site: {
+  max-width: 960px;
+}
+
+.lg-image-container {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.lg-image-container img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* HEADER */
+.header {
+  display: flex;
+  height: 64px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-left: 24px;
+  height: 32px;
+}
+
+.logo p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.logo_callout {
+  color: lightgrey;
+  font-weight: lighter;
+}
+
+.navigation {
+  display: flex;
+  padding-right: 24px;
+}
+
+.navigation li {
+  list-style: none;
+  margin-left: 16px;
+}
+
+/* MAIN BANNER SECTION */
+.main-banner {
+  display: flex;
+  background-color: lightgrey;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.main-banner_content {
+  text-align: left;
+  align-items: center;
+  color: Dimgrey;
+}
+
+#button {
+  background-color: Dimgrey;
+  width: 275px;
+  padding: 8px;
+}
+#button a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+
+}
+
+/* INFORMATION SECTION */
+.information {
+  display: flex;
+}
+
+.information-main {
+  width: 60%;
+}
+
+.information-sidebar {
+  width: 40%;
+}
+
+.sidebar-item {
+  display: flex;
+}
+
+.sidebar-image {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+}
+
+.sidebar-image img {
+  max-width: 100%;
+  display: block;
+}
+
+.sidebar-content {
+  width: 65%;
+}
+
+.sidebar-link {
+  text-decoration: none;
+}
