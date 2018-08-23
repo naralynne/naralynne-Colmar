@@ -5,8 +5,8 @@ html {
   font-size: 16px;
 }
 
-.main-site: {
-  max-width: 960px;
+.main-site {
+  max-width: 1100px;
 }
 
 .lg-image-container {
@@ -17,6 +17,35 @@ html {
 .lg-image-container img {
   max-width: 100%;
   display: block;
+}
+
+.sidebar {
+  max-width: 40%;
+  padding-top: 20px;
+}
+
+.sidebar-item {
+  display: flex;
+}
+
+.sidebar-image {
+  max-width: 35%;
+  height: auto;
+  margin: 16px;
+}
+
+.sidebar-image img {
+  max-width: 100%;
+  display: block;
+}
+
+.sidebar-content {
+  max-width: 100%;
+  display: block;
+}
+
+.sidebar-link {
+  text-decoration: none;
 }
 
 
@@ -59,14 +88,13 @@ html {
   margin-left: 16px;
 }
 
-/* MAIN BANNER SECTION */
+/* MAIN BANNER SECTION -- fix alignment of button*/
 .main-banner {
   display: flex;
   background-color: lightgrey;
   justify-content: space-between;
   align-items: center;
 }
-
 
 .main-banner_content {
   text-align: left;
@@ -86,38 +114,95 @@ html {
 
 }
 
-/* INFORMATION SECTION */
+/* INFORMATION SECTION -- Fix main image size*/
 .information {
   display: flex;
 }
 
 .information-main {
-  width: 60%;
+  max-width: 60%;
+  /*padding: 32px 24px;*/
 }
 
-.information-sidebar {
-  width: 40%;
+.information-main-content {
+  padding-bottom: 24px;
+  max-width: 100%;
 }
 
-.sidebar-item {
+
+
+/* COURSES SECTION */
+.courses-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  align-content: center;
+  justify-content: space-between;
+  background-color: lightgrey;
+  padding: 0 72px;
+}
+
+.courses-container h2 {
+  padding-top: 32px;
+  text-align: center;
+}
+
+.courses {
+  display: flex;
+  padding: 32px 72px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.course {
+  width: 250px;
+  margin-right: 16px;
+}
+
+.course-image-container img {
+  height: auto;
+  max-width: 250px;
+
+}
+
+.course-content {
+  max-width: 250px;
+  background-color: white;
+  padding: 16px 0 24px 16px;
+}
+
+.course .category {
+  text-transform: uppercase;
+  padding: 8px 0;
+}
+
+/* THESIS SECTION -- Fix this section*/
+.Thesis-content {
   display: flex;
 }
 
-.sidebar-image {
-  width: 35%;
-  height: auto;
-  margin: 16px;
-}
-
-.sidebar-image img {
-  max-width: 100%;
+.Thesis-container h2 {
   display: block;
+  padding: 32px 0;
+  text-align: center;
 }
 
-.sidebar-content {
-  width: 65%;
+.thesis-main {
+  max-width: 60%;
+  /*padding: 32px 24px;*/
 }
 
-.sidebar-link {
-  text-decoration: none;
+.thesis-main-content {
+  padding-bottom: 24px;
+  max-width: 100%;
 }
+
+.thesis-main video {
+  max-width: 100%;
+}
+
+/*.thesis-sidebar {
+  max-width: 40%;
+  padding-top: 20px;
+} */
+
+/* FOOTER STYLES HERE */
