@@ -17,11 +17,12 @@ html {
 .lg-image-container img {
   max-width: 100%;
   display: block;
+  /*object-fit: cover;*/
 }
 
 .sidebar {
   max-width: 40%;
-  padding-top: 20px;
+  border-left: 0.5px solid lightgrey;
 }
 
 .sidebar-item {
@@ -50,7 +51,7 @@ html {
 
 
 /* HEADER */
-.header {
+header {
   display: flex;
   height: 64px;
   width: 100%;
@@ -78,12 +79,12 @@ html {
   font-weight: lighter;
 }
 
-.navigation {
+nav ul {
   display: flex;
   padding-right: 24px;
 }
 
-.navigation li {
+nav li {
   list-style: none;
   margin-left: 16px;
 }
@@ -120,15 +121,19 @@ html {
 }
 
 .information-main {
-  max-width: 60%;
+  width: 60%;
+  display: block;
   /*padding: 32px 24px;*/
 }
 
 .information-main-content {
-  padding-bottom: 24px;
+  padding: 0 32px 24px 24px;
   max-width: 100%;
 }
 
+#information-image {
+  width: 90%;
+}
 
 
 /* COURSES SECTION */
@@ -161,13 +166,13 @@ html {
 .course-image-container img {
   height: auto;
   max-width: 250px;
-
+  display: block;
 }
 
 .course-content {
   max-width: 250px;
   background-color: white;
-  padding: 16px 0 24px 16px;
+  padding: 8px 0 24px 16px;
 }
 
 .course .category {
@@ -175,9 +180,15 @@ html {
   padding: 8px 0;
 }
 
+
 /* THESIS SECTION -- Fix this section*/
-.Thesis-content {
+.Thesis-container {
+  max-width: 1100px;
+}
+
+.thesis-content {
   display: flex;
+  text-align: left;
 }
 
 .Thesis-container h2 {
@@ -187,22 +198,49 @@ html {
 }
 
 .thesis-main {
-  max-width: 60%;
-  /*padding: 32px 24px;*/
+  width: 60%;
+  text-align: left;
+  display: block;
+  bottom: 25px;
 }
 
 .thesis-main-content {
-  padding-bottom: 24px;
+  padding: 0px 24px;
   max-width: 100%;
+  text-align: left;
+
 }
 
-.thesis-main video {
-  max-width: 100%;
+.thesis-main-content h2 {
+  text-align: left;
+  display: block;
 }
 
-/*.thesis-sidebar {
-  max-width: 40%;
-  padding-top: 20px;
-} */
+video {
+  height: auto;
+  width: 150%;
+  display: block;
+  position: relative;
+  bottom: 30px;
+}
+
+#fisma {
+  background-color: lightgrey;
+}
 
 /* FOOTER STYLES HERE */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.5px solid lightgrey;
+}
+
+.footer_links {
+  text-align: right;
+}
+
+footer a {
+  padding-right: 25px;
+  text-decoration: none;
+}

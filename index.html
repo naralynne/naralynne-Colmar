@@ -11,7 +11,7 @@
     <div class="main-site">
 
   <!--HEADER SECTION-->
-      <div class="header">
+      <header>
         <div class="logo">
           <div id="logo-image">
             <img src="./resources/images/ic-logo.svg" alt="Colmar logo">
@@ -20,7 +20,7 @@
         </div> <!--Close logo div-->
 
         <nav>
-          <ul class="navigation">
+          <ul>
             <li>On Campus</li>
             <li>Online</li>
             <li>For Companies</li>
@@ -28,7 +28,7 @@
           </ul>
         </nav>
 
-     </div> <!--Close header div-->
+     </header> <!--Close header div-->
 
   <!--MAIN BANNER SECTION-->
       <div class="main-banner">
@@ -49,7 +49,7 @@
 <!--INFORMATION SECTION-->
       <div class="information">
         <div class="information-main">
-          <div class="lg-image-container">
+          <div class="lg-image-container" id=information-image>
             <img src="./resources/images/information-main.jpg" alt="reading">
           </div>
 
@@ -193,7 +193,7 @@
 
       <div class="thesis-content">
         <div class="thesis-main">
-          <div class="lg-image-container">
+          <div class="lg-image-container" id="thesis_video">
             <video src="./resources/videos/thesis.mp4" autoplay poster="posterimage.jpg">
             </video>
           </div>
@@ -210,7 +210,7 @@
         <div class="sidebar">
 
             <!--Fisma sidebar-->
-          <div class="sidebar-item">
+          <div class="sidebar-item" id="fisma">
               <div class="sidebar-image">
                   <img src="./resources/images/thesis-fisma.jpg" alt="Prototype showcase">
               </div>
@@ -242,8 +242,12 @@
 
     <footer>
       <p>&copy 2016 Colmar Academy. All rights reserved.</p>
-      <a href="#">Terms</a>
-      <a href="#">Privacy</a>
+
+      <div class="footer_links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+
     </footer>
 
     </div> <!--Close main-site div-->
