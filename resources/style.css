@@ -1,7 +1,8 @@
 /* UNIVERSAL STYLES */
 
 html {
-  font-family: "Arial";
+  /*font-family: "Arial";*/
+  font-family: 'Heebo', sans-serif;
   font-size: 16px;
 }
 
@@ -11,7 +12,7 @@ html {
 
 .lg-image-container {
   width: 60%;
-  padding: 32px 24px;
+  padding: 24px 24px;
 }
 
 .lg-image-container img {
@@ -75,7 +76,7 @@ header {
 }
 
 .logo_callout {
-  color: lightgrey;
+  color: gray;
   font-weight: lighter;
 }
 
@@ -87,6 +88,26 @@ nav ul {
 nav li {
   list-style: none;
   margin-left: 16px;
+}
+
+#mobile_header {
+  display: none;
+}
+
+@media only screen and (max-width: 685px) {
+  header p {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #mobile_header {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
 
 /* MAIN BANNER SECTION -- fix alignment of button*/
@@ -101,6 +122,7 @@ nav li {
   text-align: left;
   align-items: center;
   color: Dimgrey;
+  padding-right: 24px;
 }
 
 #button {
@@ -135,6 +157,9 @@ nav li {
   width: 90%;
 }
 
+.sidebar-link {
+  padding-top: 8px;
+}
 
 /* COURSES SECTION */
 .courses-container {
@@ -205,9 +230,10 @@ nav li {
 }
 
 .thesis-main-content {
-  padding: 0px 24px;
+  padding: 0px 24px 32px 24px;
   max-width: 100%;
   text-align: left;
+  display: block;
 
 }
 
