@@ -90,12 +90,12 @@ nav li {
   margin-left: 16px;
 }
 
-#mobile_header {
+#mobile {
   display: none;
 }
 
 @media only screen and (max-width: 685px) {
-  header p {
+  .desktop .logo {
     display: none;
   }
 
@@ -103,9 +103,14 @@ nav li {
     display: none;
   }
 
-  #mobile_header {
-    display: flex;
-    justify-content: space-between;
+#desktop {
+  display: none;
+}
+
+#mobile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   }
 
 }
@@ -134,6 +139,20 @@ nav li {
   text-align: center;
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (max-width: 685px) {
+  .main-banner {
+    display: block;
+    max-width: 100%;
+  }
+
+  .lg-image-container {
+    max-width: 100%;
+  }
+  .main-banner_content {
+    padding: 32px 16px;
+}
 
 }
 
@@ -159,6 +178,37 @@ nav li {
 
 .sidebar-link {
   padding-top: 8px;
+}
+
+@media only screen and (max-width: 685px) {
+  .information-main {
+    display: none;
+  }
+
+  .sidebar {
+    max-width: 100%;
+  }
+
+  .sidebar-item {
+    display: block;
+  }
+
+  .sidebar-image {
+    max-width: 100%;
+    height: auto;
+    margin: 16px;
+  }
+
+  .sidebar-image img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .orientation-content, .lecture-content, .campus-content {
+    padding-left: 16px;
+
+  }
+
 }
 
 /* COURSES SECTION */
@@ -205,6 +255,23 @@ nav li {
   padding: 8px 0;
 }
 
+
+@media only screen and (max-width: 685px) {
+  .courses-container {
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .course img, .course p, .course span {
+    display: none;
+  }
+  .course-content h3 {
+    width: 100%;
+    margin: 8px 16px;
+  }
+
+}
 
 /* THESIS SECTION -- Fix this section*/
 .Thesis-container {
